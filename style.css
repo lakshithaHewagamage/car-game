@@ -65,3 +65,48 @@
     right: 20%;
     top: 100px;
 }
+.button1{
+    height: 6%;
+    width: 12%;
+    left: 25%;
+    bottom: 6%;
+    position: absolute;
+    background-color: rgb(19, 158, 168);
+    background-image: url(leftarrow1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+.button2{
+    height:5%;
+    width: 12%;
+    left: 45%;
+    bottom: 10%;
+    position: absolute;
+    background-color: rgb(19, 158, 168);
+    background-image: url(uparrow1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.button3{
+    height: 5%;
+    width: 12%;
+    left: 45%;
+    bottom: 3%;
+    position: absolute;
+    background-color: rgb(19, 158, 168);
+    background-image: url(downarrow1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.button4{
+    height: 6%;
+    width: 12%;
+    right: 25%;
+    bottom: 6%;
+    position: absolute;
+    background-color: rgb(19, 158, 168);
+    background-image: url(rightarrow1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}

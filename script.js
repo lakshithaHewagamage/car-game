@@ -1,6 +1,10 @@
 const score=document.querySelector(".score");
 const startScreen=document.querySelector(".startScreen");
 const gameArea=document.querySelector(".gameArea");
+const button1=document.querySelector(".button1");
+const button2=document.querySelector(".button2");
+const button3=document.querySelector(".button3");
+const button4=document.querySelector(".button4");
 
 let player={
     speed:5,
@@ -12,10 +16,17 @@ let keys={
     ArrowRight:false,
     ArrowLeft:false
 };
-
 startScreen.addEventListener("click",start);
 document.addEventListener("keydown",pressOn);
 document.addEventListener("keyup",pressOff);
+button1.addEventListener("mousedown",pressOn1);
+button1.addEventListener("mouseup",pressOff1);
+button2.addEventListener("mousedown",pressOn2);
+button2.addEventListener("mouseup",pressOff2);
+button3.addEventListener("mousedown",pressOn3);
+button3.addEventListener("mouseup",pressOff3);
+button4.addEventListener("mousedown",pressOn4);
+button4.addEventListener("mouseup",pressOff4);
 
 function moveLines(){
     let lines=document.querySelectorAll(".line");
@@ -90,6 +101,39 @@ function pressOn(e){
 function pressOff(e){
     e.preventDefault();
     keys[e.key]=false;
+}
+
+function pressOn1(e){
+    e.preventDefault();
+    keys['ArrowLeft']=true;
+}
+function pressOff1(e){
+    e.preventDefault();
+    keys['ArrowLeft']=false;
+}
+function pressOn2(e){
+    e.preventDefault();
+    keys['ArrowUp']=true;
+}
+function pressOff2(e){
+    e.preventDefault();
+    keys['ArrowUp']=false;
+}
+function pressOn3(e){
+    e.preventDefault();
+    keys['ArrowDown']=true;
+}
+function pressOff3(e){
+    e.preventDefault();
+    keys['ArrowDown']=false;
+}
+function pressOn4(e){
+    e.preventDefault();
+    keys['ArrowRight']=true;
+}
+function pressOff4(e){
+    e.preventDefault();
+    keys['ArrowRight']=false;
 }
 
 function endGame(){
