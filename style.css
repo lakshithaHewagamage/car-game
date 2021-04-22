@@ -58,15 +58,15 @@
     border: 1px solid red;
     padding: 15px;
     margin: auto;
-    width: 300px;
+    width: 50%;
     position: absolute;
     z-index: 1;
-    left: 10%;
+    left: 20%;
     right: 20%;
-    top: 100px;
+    top: 40%;
 }
 .button1{
-    height: 6%;
+    height: 5%;
     width: 12%;
     left: 25%;
     bottom: 6%;
@@ -100,7 +100,7 @@
     background-size:contain;
 }
 .button4{
-    height: 6%;
+    height: 5%;
     width: 12%;
     right: 25%;
     bottom: 6%;

@@ -19,14 +19,14 @@ let keys={
 startScreen.addEventListener("click",start);
 document.addEventListener("keydown",pressOn);
 document.addEventListener("keyup",pressOff);
-button1.addEventListener("mousedown",pressOn1);
-button1.addEventListener("mouseup",pressOff1);
-button2.addEventListener("mousedown",pressOn2);
-button2.addEventListener("mouseup",pressOff2);
-button3.addEventListener("mousedown",pressOn3);
-button3.addEventListener("mouseup",pressOff3);
-button4.addEventListener("mousedown",pressOn4);
-button4.addEventListener("mouseup",pressOff4);
+button1.addEventListener("touchstart",pressOn1);
+button1.addEventListener("touchend",pressOff1);
+button2.addEventListener("touchstart",pressOn2);
+button2.addEventListener("touchend",pressOff2);
+button3.addEventListener("touchstart",pressOn3);
+button3.addEventListener("touchend",pressOff3);
+button4.addEventListener("touchstart",pressOn4);
+button4.addEventListener("touchend",pressOff4);
 
 function moveLines(){
     let lines=document.querySelectorAll(".line");
