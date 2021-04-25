@@ -165,7 +165,7 @@ function start(){
     for(let x=0;x<5;x++){
         let enemy=document.createElement("div");
         enemy.classList.add("enemy");
-        enemy.innerHTML="<br>"+(x+1);
+      //  enemy.innerHTML="<br>"+(x+1);
         enemy.y=((x+1)*600)*-1;
         enemy.style.top=enemy.y+"px";
         enemy.style.left=Math.floor(Math.random()*150)+"px";
@@ -178,5 +178,5 @@ function randomColor(){
         let hex=Math.floor(Math.random()*256).toString(16);
         return ("0"+String(hex)).substr(-2)
     }
-    return "#"+c()+c()+c();
+    return "#"+c()+c()+c()+.1;
 }
